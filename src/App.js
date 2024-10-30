@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import Main from './Components/Main';
+import Navbar from './Components/Navbar';
+import Information from './Components/Information';
+import Belajar from './Components/Pembelajaran';
+import Materi from './Components/Materi';
+import Mkonsep from './Components/Mkonsep';
+import Mlogika from './Components/Mlogika';
+import Malgoritma from './Components/Malgoritma';
+import Rating from './Components/Rating';
+import Komunikasi from './Components/Komunikasi';
+import Footer from './Components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+      <Main/>
+      <Information/>
+      <Komunikasi/>
+      <Rating/>
+      <Belajar/>
+      <Materi/>
+      <Mkonsep/>
+      <Mlogika/>
+      <Malgoritma/> 
+      <Footer/>
     </div>
   );
 }

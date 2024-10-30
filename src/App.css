@@ -1,16 +1,52 @@
+:root {
+  --main-color: #fd3b3b;
+  --main2-color: #93DEFF;
+  --secondary-color: #3E3636;
+  --third-color:#000000;
+  --main-text:#F5EDED;
+}
+
+.font-dancing-script {
+  font-family: 'Dancing Script', cursive;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.text-stroke {
+  text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+
+.highlight {
+  position: relative;
+  display: inline-block;
+}
+.highlight::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.3em;
+  background-color: #ffcc00;
+  z-index: -1;
+  transform: rotate(-2deg);
+}
+
+/* @media (min-width: 900px) {
+  .hamburger-btn {
+      display: none;
+  }
+} */
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
